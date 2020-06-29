@@ -1,9 +1,17 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     background-color: #1a202c;
     font-family: 'MuseoModerno', cursive;
 }
-header{
-    
+.headerNav{
+  overflow: hidden;
+  background-color: #1a202c;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+  
 }
 .mr-5{
     color: #fff;
@@ -14,11 +22,13 @@ header{
 .mainImageDiv{
     width: 100%;
     position: relative;
+    padding-top: 5.2%;
     
 }
 .mainImage{
-    filter: blur(3px);
-    opacity: 0.7;
+    /* filter: blur(0.1rem); */
+    opacity: 0.3;
+    
     
 }
 .mainImageText {    
@@ -54,11 +64,32 @@ header{
     /* background: rgb(0,26,36);
     background: linear-gradient(90deg, rgba(0,26,36,1) 0%, rgba(6,57,66,1) 25%, rgba(9,121,73,1) 46%, rgba(7,146,124,1) 73%, rgba(0,212,255,1) 100%); */
   }
-   
+  .loginText{
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;    
+  } 
+  
+
+
+
   @media (max-width: 1500px){
     body{
       font-size: 30px;
     }
+    .mainImage{
+      height: 550px;
+    }
+    .loginCon{
+      margin-top: -5%;
+      margin-left: -5%;
+      margin-bottom: -5%;
+    }
+    .footerCat{
+      font-size: 20px;
+      padding-right: 10%;
+    }
+    
   }
   @media (max-width: 900px){
     body{
@@ -67,8 +98,19 @@ header{
     .mainImageText {    
       width: 60%;
     }
+    .mainImage{
+      height: 400px;
+    }
+    .logo{
+      margin-left: 20%;
+    }
+    .loginText{
+      font-size: 25px;
+    }
+    .loginCon{
+      margin: 0%; 
+    }
     
-
   }
   @media (max-width: 600px){
     body{
@@ -78,8 +120,17 @@ header{
       width: 60%;
       padding: 5px;
     }
-  
-
+    .mainImage{
+      height: 300px;
+    }
+    .logo{
+      margin-left: 20%;
+    }
+    .loginCon{
+      margin: 0;
+      margin-top: -5%;
+    }
+    
 
   }
 
